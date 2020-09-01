@@ -1,0 +1,20 @@
+{
+  "name": "garazh-dna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bionode-fasta": "^0.5.6",
+    "canvas": "^2.6.1",
+    "fasta-parser": "^0.1.0",
+    "fs": "0.0.1-security",
+    "jimp": "^0.16.1",
+    "mathjs": "^7.2.0"
+  }
+}
