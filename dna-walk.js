@@ -23,9 +23,9 @@ let image = new Jimp(width, height, (err, image) => {
         encoding: 'utf8',
         fd: null,
     });
+    let pos = [0.5, 0.5];
     readable.on('readable', () => {
         let letter;
-        let pos = [0.5, 0.5];
         while (null !== (letter = readable.read(1))) {
             const vertex = vertices.get(letter.toLowerCase());
             if (vertex) {
@@ -42,7 +42,7 @@ let image = new Jimp(width, height, (err, image) => {
         console.log('end walk');
     });
 
-    readable.on('end', function () {
+    readable.on('end',  () => {
         image.write('test.png', (err) => {
             if (err) throw err;
         });
